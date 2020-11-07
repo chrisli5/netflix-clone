@@ -11,6 +11,9 @@
 # production
 /build
 
+# firebase config
+/src/lib/firebase.config.js
+
 # misc
 .DS_Store
 .env.local

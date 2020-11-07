@@ -4,18 +4,14 @@ import {
   Row,
   Column,
   Link,
-  Text,
   Title,
+  Text,
   Break,
 } from "./styles/footer";
 
 export default function Footer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
-
-Footer.Container = function FooterContainer({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>;
-};
 
 Footer.Row = function FooterRow({ children, ...restProps }) {
   return <Row {...restProps}>{children}</Row>;
@@ -37,6 +33,6 @@ Footer.Text = function FooterText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
 };
 
-Footer.Break = function FooterBreak({ children, ...restProps }) {
+Footer.Break = function FooterBreak({ ...restProps }) {
   return <Break {...restProps} />;
 };
